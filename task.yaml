@@ -1,0 +1,14 @@
+name: {{ .taskName }}
+description: {{ .taskDescription }}
+source: {{ .taskRepoPath }}
+labels:
+  - {{ .label }}
+input:
+  {{ range .inputs }}
+  - name: {{ .input.name }}
+    description: {{ .input.description }}
+  {{ - end}}
+execution:
+  {{ range .commands }}
+  - {{ .command }}
+  {{ - end }}
