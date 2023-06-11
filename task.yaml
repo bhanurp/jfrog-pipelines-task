@@ -1,14 +1,11 @@
-name: {{ .taskName }}
-description: {{ .taskDescription }}
-source: {{ .taskRepoPath }}
+name: taskName
+description: taskDescription
+source: taskRepoPath for eq - https://github.com/myorg/mytask
 labels:
-  - {{ .label }}
+  - label1
+  - label2
 input:
-  {{ range .inputs }}
-  - name: {{ .input.name }}
-    description: {{ .input.description }}
-  {{ - end}}
+  - name: input name
+    description: input description
 execution:
-  {{ range .commands }}
-  - {{ .command }}
-  {{ - end }}
+  - command to be executed
