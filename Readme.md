@@ -1,6 +1,6 @@
 # Jfrog-Pipelines-Task
 
-This Pipelines Task is implementation mvn publish native step.
+This JFrog pipelines task performs this action.
  
 this task performs below actions
 
@@ -11,12 +11,13 @@ this task performs below actions
 
 ### What's New
 
-[Add whats latest in the release]
+`Add whats latest in the release`
 - Added to support caching
 
 ### Prerequisites
 
-[Add pre requisites for running this task]
+`Add pre requisites for running this task`
+
 This task requires jfrog-cli, JFrog Xray
 
 ## Usage
@@ -26,10 +27,11 @@ Give some sample configuration for running
 
 ```yaml
 - task: jfrog/pipelines-task@v0.0.1
+  repository: pipelines-tasks-virtual
   id: my-awesome-task
   input:
-    inputA:
-    inputB:
+    input1: value1
+    input2: value2
 ```
 
 ### Input Variables
@@ -39,7 +41,6 @@ Give some sample configuration for running
 | inputA                      | true     |                                       | Simple description about inputA |
 | inputB                      | false    | false                                 | Simple description about inputB |
 
-```
 
 ### Exported Environment Variables
 
@@ -59,8 +60,8 @@ The release notes are available [here](RELEASE.md).
 
 ## Troubleshooting
 
-Add any known errors and what might be the reason for the error.
+- Add any known errors and what might be the reason for the error.
 
 ## Related Tasks
 
-Mention all the relatable tasks which might help.
+- Mention all the relatable tasks which might help.
