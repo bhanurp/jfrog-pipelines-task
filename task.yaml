@@ -1,11 +1,18 @@
 name: taskName
 description: taskDescription
-source: taskRepoPath for eq - https://github.com/myorg/mytask
+source: https://github.com/jfrog/jfrog-pipelines-task
 labels:
-  - label1
-  - label2
+  - task
+  - template
 input:
   - name: input name
     description: input description
 execution:
-  - command to be executed
+  - echo "this is my awesome task"
+hooks:
+  onStepSuccess:
+    - echo "injecting from task into step onSuccess"
+  onStepFailure:
+    - echo "injecting from task into step onFailure"
+  onStepComplete:
+    - echo "injecting from task into step onComplete"
