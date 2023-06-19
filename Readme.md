@@ -1,8 +1,6 @@
 # Jfrog-Pipelines-Task
 
-This JFrog pipelines task performs this action.
- 
-this task performs below actions
+This JFrog pipelines task performs the following:
 
 - Does some awesome work
 - Installation of a popular package
@@ -12,7 +10,7 @@ this task performs below actions
 ### What's New
 
 `Add whats latest in the release`
-- Added to support caching
+Added to support caching
 
 ### Prerequisites
 
@@ -60,8 +58,8 @@ The release notes are available [here](RELEASE.md).
 
 ## Troubleshooting
 
-- Add any known errors and what might be the reason for the error.
+Add any known errors and what might be the reason for the error.
 
 ## Related Tasks
 
-- Mention all the relatable tasks which might help.
+Mention all the relatable tasks that might help.
